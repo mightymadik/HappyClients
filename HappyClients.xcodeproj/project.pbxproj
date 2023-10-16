@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E2A686B1F9D3F473EE1B6CF /* Pods_HappyClients.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22855AE734DDD64117C6D8B /* Pods_HappyClients.framework */; };
+		FA19B5612A0CEEB60091B866 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA19B5602A0CEEB60091B866 /* GoogleService-Info.plist */; };
+		FA19B5632A0D34320091B866 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19B5622A0D34320091B866 /* OrderViewController.swift */; };
+		FA62619E29E72C5700B7748D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62619D29E72C5700B7748D /* User.swift */; };
+		FA6261A029E72C6100B7748D /* AdPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62619F29E72C6100B7748D /* AdPost.swift */; };
+		FA6261A629E8014E00B7748D /* PayWallHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6261A529E8014E00B7748D /* PayWallHeaderView.swift */; };
+		FA6261A829E8029E00B7748D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6261A729E8029E00B7748D /* Extensions.swift */; };
+		FA6261AC29E8083F00B7748D /* PayWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6261AB29E8083F00B7748D /* PayWallViewController.swift */; };
+		FA6261AE29E8097B00B7748D /* PayWallDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6261AD29E8097B00B7748D /* PayWallDescriptionView.swift */; };
+		FA6261B029E82F5600B7748D /* SignInHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6261AF29E82F5600B7748D /* SignInHeaderView.swift */; };
+		FA6261B229E82FA400B7748D /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6261B129E82FA400B7748D /* HapticsManager.swift */; };
+		FA6261B529EEAEEE00B7748D /* PostPreviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6261B429EEAEEE00B7748D /* PostPreviewTableViewCell.swift */; };
+		FA6261B729EEAEFE00B7748D /* PostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6261B629EEAEFE00B7748D /* PostHeaderTableViewCell.swift */; };
+		FAF03C6629E6F95B0042203C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF03C6529E6F95B0042203C /* AppDelegate.swift */; };
+		FAF03C6829E6F95B0042203C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF03C6729E6F95B0042203C /* SceneDelegate.swift */; };
+		FAF03C6A29E6F95B0042203C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF03C6929E6F95B0042203C /* HomeViewController.swift */; };
+		FAF03C6F29E6F95C0042203C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF03C6E29E6F95C0042203C /* Assets.xcassets */; };
+		FAF03C7229E6F95C0042203C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF03C7029E6F95C0042203C /* LaunchScreen.storyboard */; };
+		FAF03C7F29E7041F0042203C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF03C7E29E7041F0042203C /* ProfileViewController.swift */; };
+		FAF03C8229E7043D0042203C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF03C8129E7043D0042203C /* TabBarViewController.swift */; };
+		FAF03C8429E7044B0042203C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF03C8329E7044B0042203C /* SignInViewController.swift */; };
+		FAF03C8629E704570042203C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF03C8529E704570042203C /* SignUpViewController.swift */; };
+		FAF03C8C29E704810042203C /* ViewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF03C8B29E704810042203C /* ViewPostViewController.swift */; };
+		FAF03C8E29E7049C0042203C /* CreateNewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF03C8D29E7049C0042203C /* CreateNewPostViewController.swift */; };
+		FAF03C9029E704D00042203C /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF03C8F29E704D00042203C /* IAPManager.swift */; };
+		FAF03C9229E704E20042203C /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF03C9129E704E20042203C /* DataBaseManager.swift */; };
+		FAF03C9429E704EF0042203C /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF03C9329E704EF0042203C /* AuthManager.swift */; };
+		FAF03C9629E704FB0042203C /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF03C9529E704FB0042203C /* StorageManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0588CE54653D086447045E4D /* Pods-HappyClients.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyClients.release.xcconfig"; path = "Target Support Files/Pods-HappyClients/Pods-HappyClients.release.xcconfig"; sourceTree = "<group>"; };
+		F22855AE734DDD64117C6D8B /* Pods_HappyClients.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HappyClients.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F292E682CC390978BE5D062A /* Pods-HappyClients.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyClients.debug.xcconfig"; path = "Target Support Files/Pods-HappyClients/Pods-HappyClients.debug.xcconfig"; sourceTree = "<group>"; };
+		FA19B5602A0CEEB60091B866 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA19B5622A0D34320091B866 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		FA62619D29E72C5700B7748D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA62619F29E72C6100B7748D /* AdPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdPost.swift; sourceTree = "<group>"; };
+		FA6261A429E7FE7400B7748D /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		FA6261A529E8014E00B7748D /* PayWallHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallHeaderView.swift; sourceTree = "<group>"; };
+		FA6261A729E8029E00B7748D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FA6261AB29E8083F00B7748D /* PayWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallViewController.swift; sourceTree = "<group>"; };
+		FA6261AD29E8097B00B7748D /* PayWallDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallDescriptionView.swift; sourceTree = "<group>"; };
+		FA6261AF29E82F5600B7748D /* SignInHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInHeaderView.swift; sourceTree = "<group>"; };
+		FA6261B129E82FA400B7748D /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		FA6261B429EEAEEE00B7748D /* PostPreviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPreviewTableViewCell.swift; sourceTree = "<group>"; };
+		FA6261B629EEAEFE00B7748D /* PostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		FAF03C6229E6F95B0042203C /* HappyClients.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyClients.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF03C6529E6F95B0042203C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAF03C6729E6F95B0042203C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FAF03C6929E6F95B0042203C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FAF03C6E29E6F95C0042203C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAF03C7129E6F95C0042203C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAF03C7329E6F95C0042203C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF03C7E29E7041F0042203C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FAF03C8129E7043D0042203C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		FAF03C8329E7044B0042203C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		FAF03C8529E704570042203C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FAF03C8B29E704810042203C /* ViewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPostViewController.swift; sourceTree = "<group>"; };
+		FAF03C8D29E7049C0042203C /* CreateNewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostViewController.swift; sourceTree = "<group>"; };
+		FAF03C8F29E704D00042203C /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
+		FAF03C9129E704E20042203C /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		FAF03C9329E704EF0042203C /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		FAF03C9529E704FB0042203C /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAF03C5F29E6F95B0042203C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E2A686B1F9D3F473EE1B6CF /* Pods_HappyClients.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AEE8850D0216702ECBCB7FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F22855AE734DDD64117C6D8B /* Pods_HappyClients.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69088600A197B2D55F97D5BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F292E682CC390978BE5D062A /* Pods-HappyClients.debug.xcconfig */,
+				0588CE54653D086447045E4D /* Pods-HappyClients.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA6261A129E7F3EB00B7748D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				FA6261AB29E8083F00B7748D /* PayWallViewController.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		FA6261B329EEAEBD00B7748D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA6261B429EEAEEE00B7748D /* PostPreviewTableViewCell.swift */,
+				FA6261B629EEAEFE00B7748D /* PostHeaderTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FAF03C5929E6F95B0042203C = {
+			isa = PBXGroup;
+			children = (
+				FAF03C6429E6F95B0042203C /* HappyClients */,
+				FAF03C6329E6F95B0042203C /* Products */,
+				69088600A197B2D55F97D5BD /* Pods */,
+				4AEE8850D0216702ECBCB7FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAF03C6329E6F95B0042203C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAF03C6229E6F95B0042203C /* HappyClients.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAF03C6429E6F95B0042203C /* HappyClients */ = {
+			isa = PBXGroup;
+			children = (
+				FAF03C7D29E703810042203C /* Managers */,
+				FAF03C7C29E7037B0042203C /* Other */,
+				FAF03C7B29E703700042203C /* Controllers */,
+				FAF03C7A29E703680042203C /* Views */,
+				FAF03C7929E703600042203C /* Models */,
+				FAF03C7329E6F95C0042203C /* Info.plist */,
+			);
+			path = HappyClients;
+			sourceTree = "<group>";
+		};
+		FAF03C7929E703600042203C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA62619D29E72C5700B7748D /* User.swift */,
+				FA62619F29E72C6100B7748D /* AdPost.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAF03C7A29E703680042203C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA6261B329EEAEBD00B7748D /* Cells */,
+				FAF03C7029E6F95C0042203C /* LaunchScreen.storyboard */,
+				FA6261A529E8014E00B7748D /* PayWallHeaderView.swift */,
+				FA6261AD29E8097B00B7748D /* PayWallDescriptionView.swift */,
+				FA6261AF29E82F5600B7748D /* SignInHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAF03C7B29E703700042203C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA6261A129E7F3EB00B7748D /* Other */,
+				FAF03C9729E70B410042203C /* CoreTabs */,
+				FAF03C9829E70B6F0042203C /* Auth */,
+				FAF03C9929E70B760042203C /* Posts */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FAF03C7C29E7037B0042203C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				FAF03C6E29E6F95C0042203C /* Assets.xcassets */,
+				FAF03C6529E6F95B0042203C /* AppDelegate.swift */,
+				FAF03C6729E6F95B0042203C /* SceneDelegate.swift */,
+				FA6261A729E8029E00B7748D /* Extensions.swift */,
+				FA19B5602A0CEEB60091B866 /* GoogleService-Info.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		FAF03C7D29E703810042203C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FAF03C8F29E704D00042203C /* IAPManager.swift */,
+				FAF03C9129E704E20042203C /* DataBaseManager.swift */,
+				FAF03C9329E704EF0042203C /* AuthManager.swift */,
+				FAF03C9529E704FB0042203C /* StorageManager.swift */,
+				FA6261B129E82FA400B7748D /* HapticsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FAF03C9729E70B410042203C /* CoreTabs */ = {
+			isa = PBXGroup;
+			children = (
+				FAF03C6929E6F95B0042203C /* HomeViewController.swift */,
+				FAF03C7E29E7041F0042203C /* ProfileViewController.swift */,
+				FAF03C8129E7043D0042203C /* TabBarViewController.swift */,
+				FA6261A429E7FE7400B7748D /* Configuration.storekit */,
+			);
+			path = CoreTabs;
+			sourceTree = "<group>";
+		};
+		FAF03C9829E70B6F0042203C /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				FAF03C8329E7044B0042203C /* SignInViewController.swift */,
+				FAF03C8529E704570042203C /* SignUpViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		FAF03C9929E70B760042203C /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				FAF03C8D29E7049C0042203C /* CreateNewPostViewController.swift */,
+				FAF03C8B29E704810042203C /* ViewPostViewController.swift */,
+				FA19B5622A0D34320091B866 /* OrderViewController.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAF03C6129E6F95B0042203C /* HappyClients */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF03C7629E6F95C0042203C /* Build configuration list for PBXNativeTarget "HappyClients" */;
+			buildPhases = (
+				1DE87188F4D88A3320A2B71B /* [CP] Check Pods Manifest.lock */,
+				FAF03C5E29E6F95B0042203C /* Sources */,
+				FAF03C5F29E6F95B0042203C /* Frameworks */,
+				FAF03C6029E6F95B0042203C /* Resources */,
+				0C6739AB90639C9FD1A6C91D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HappyClients;
+			productName = HappyClients;
+			productReference = FAF03C6229E6F95B0042203C /* HappyClients.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAF03C5A29E6F95B0042203C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FAF03C6129E6F95B0042203C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = FAF03C5D29E6F95B0042203C /* Build configuration list for PBXProject "HappyClients" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAF03C5929E6F95B0042203C;
+			productRefGroup = FAF03C6329E6F95B0042203C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAF03C6129E6F95B0042203C /* HappyClients */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAF03C6029E6F95B0042203C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF03C7229E6F95C0042203C /* LaunchScreen.storyboard in Resources */,
+				FAF03C6F29E6F95C0042203C /* Assets.xcassets in Resources */,
+				FA19B5612A0CEEB60091B866 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C6739AB90639C9FD1A6C91D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HappyClients/Pods-HappyClients-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HappyClients/Pods-HappyClients-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HappyClients/Pods-HappyClients-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DE87188F4D88A3320A2B71B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HappyClients-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAF03C5E29E6F95B0042203C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF03C6A29E6F95B0042203C /* HomeViewController.swift in Sources */,
+				FA6261AE29E8097B00B7748D /* PayWallDescriptionView.swift in Sources */,
+				FA6261A829E8029E00B7748D /* Extensions.swift in Sources */,
+				FAF03C9429E704EF0042203C /* AuthManager.swift in Sources */,
+				FAF03C8629E704570042203C /* SignUpViewController.swift in Sources */,
+				FAF03C6629E6F95B0042203C /* AppDelegate.swift in Sources */,
+				FAF03C8429E7044B0042203C /* SignInViewController.swift in Sources */,
+				FA6261AC29E8083F00B7748D /* PayWallViewController.swift in Sources */,
+				FA6261B529EEAEEE00B7748D /* PostPreviewTableViewCell.swift in Sources */,
+				FA6261A629E8014E00B7748D /* PayWallHeaderView.swift in Sources */,
+				FA6261B229E82FA400B7748D /* HapticsManager.swift in Sources */,
+				FA6261B029E82F5600B7748D /* SignInHeaderView.swift in Sources */,
+				FAF03C7F29E7041F0042203C /* ProfileViewController.swift in Sources */,
+				FA6261A029E72C6100B7748D /* AdPost.swift in Sources */,
+				FA62619E29E72C5700B7748D /* User.swift in Sources */,
+				FAF03C8E29E7049C0042203C /* CreateNewPostViewController.swift in Sources */,
+				FAF03C9029E704D00042203C /* IAPManager.swift in Sources */,
+				FAF03C8229E7043D0042203C /* TabBarViewController.swift in Sources */,
+				FAF03C6829E6F95B0042203C /* SceneDelegate.swift in Sources */,
+				FAF03C8C29E704810042203C /* ViewPostViewController.swift in Sources */,
+				FAF03C9229E704E20042203C /* DataBaseManager.swift in Sources */,
+				FAF03C9629E704FB0042203C /* StorageManager.swift in Sources */,
+				FA6261B729EEAEFE00B7748D /* PostHeaderTableViewCell.swift in Sources */,
+				FA19B5632A0D34320091B866 /* OrderViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FAF03C7029E6F95C0042203C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAF03C7129E6F95C0042203C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAF03C7429E6F95C0042203C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAF03C7529E6F95C0042203C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAF03C7729E6F95C0042203C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F292E682CC390978BE5D062A /* Pods-HappyClients.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 85FM3A5GG7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_FLATTEN_NIBS = NO;
+				INFOPLIST_FILE = HappyClients/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xz.HappyClients;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FAF03C7829E6F95C0042203C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0588CE54653D086447045E4D /* Pods-HappyClients.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 85FM3A5GG7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_FLATTEN_NIBS = NO;
+				INFOPLIST_FILE = HappyClients/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xz.HappyClients;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAF03C5D29E6F95B0042203C /* Build configuration list for PBXProject "HappyClients" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF03C7429E6F95C0042203C /* Debug */,
+				FAF03C7529E6F95C0042203C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF03C7629E6F95C0042203C /* Build configuration list for PBXNativeTarget "HappyClients" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF03C7729E6F95C0042203C /* Debug */,
+				FAF03C7829E6F95C0042203C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAF03C5A29E6F95B0042203C /* Project object */;
+}

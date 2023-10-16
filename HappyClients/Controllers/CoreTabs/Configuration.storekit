@@ -1,0 +1,52 @@
+{
+  "identifier" : "B46289F4",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "9648D215",
+      "localizations" : [
+
+      ],
+      "name" : "Premuim",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "4.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "44618376",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlock all HappyClients posts",
+              "displayName" : "Premium Monthly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "xz.HappyClients.premium",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Premuim Monthly",
+          "subscriptionGroupID" : "9648D215",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}
